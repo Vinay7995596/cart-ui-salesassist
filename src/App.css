@@ -29,15 +29,26 @@
   font-size: 18px;
   font-weight: 400;
   font-style: "Comme";
+  border: 1px solid red;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  height: 40px;
+}
+
+.list-nav-items:hover {
+  background-color: #2FC14F;
+}
+
+.list-nav-items.selected {
+  background-color: #2FC14F;
 }
 
 .unorder-list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .images-sizes {
@@ -104,6 +115,7 @@
   position: relative;
   cursor: pointer;
 }
+
 .bookmark-icon {
   font-size: 30px;
   color: #000;
@@ -123,12 +135,24 @@
   cursor: pointer;
 }
 
+
+
 @media screen and (max-width:767px) {
   .unorder-list-container-images-container {
     grid-template-columns: repeat(1, 1fr);
-    pad: 0px;
+    padding: 0px;
+  }
+
+  .unorder-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0px;
+    padding: 0px;
   }
   
+  .icons-content-nav-sections {
+    display: none;
+  }
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
