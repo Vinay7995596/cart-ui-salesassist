@@ -56,28 +56,6 @@ const App = () => {
         </div>
       </nav>
       <div>
-        <div>
-          {/* <ul className='unorder-list'>
-            <li>
-              <img src={image1} className="images-sizes" alt="image1" />
-            </li>
-            <li>
-              <img src={image3} alt='imag3' className="images-sizes" />
-            </li>
-            <li>
-              <img src={image4} alt='imag4' className="images-sizes" />
-            </li>
-            <li>
-              <img src={image5} alt='imag5' className="images-sizes" />
-            </li>
-            <li>
-              <img src={image2} className="images-sizes" alt='image2' />
-            </li>
-            <li>
-              <img src={image6} alt='imag6' className="images-sizes" />
-            </li>
-          </ul> */}
-        </div>
       </div>
       <div>
         <ul className='unorder-list-container-images-container'>
@@ -110,26 +88,3 @@ const App = () => {
 }
 
 export default App;
-
-// {pastData.map((items) => (
-//   <li key={items.id}>
-//     <div className='image-main-container'>
-//       <div>
-//         <img className='images-content-sizes' src={items.image} alt={items.id} />
-//         <CiBookmark className='bookmark-icon'/>
-//       </div>
-//       <h6 className='image-title'>{items.title}</h6>
-//       <div className='price-section-discount-container'>
-//         <div>
-//           <span className='discount-price'>{items.price}</span>
-//           <span className='actual-price'>8999</span>
-//           <span className='offer-involved'>(50% Off)</span>
-//         </div>
-//         <div>
-//           <GiShoppingBag className='icon-shopping' />
-//         </div>
-//       </div>
-//     </div>
-  
-//   </li>
-// ))}
